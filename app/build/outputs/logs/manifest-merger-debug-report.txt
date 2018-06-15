@@ -1,0 +1,141 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [com.android.support:design:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/132a4a0ea3beecebb660dc2fd7fd00a6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b2c3750227f575051f2a73c3a5f80cea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/761104cf1965210976e33c6ecd2c7812/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/762f7a1806eca47ca169382c1fdf015b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/85a2b62d9d3a34f85269e44215ee409e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/5111307b5341dc9754b0c82475a433cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/73bacfae6b2e1d85a2e992e72e6a04ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/47a9029401668795218c9c661761469b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b7fbc57243b044808a20f25770285e66/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/97898406ea58eeafd5eaad1e75b91f9f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/6181ad3a74fadca0eb448d78e5810a5f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e80939031a646863ddaa1a82f3fb6e38/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/26e11fb8c24aac9f6e70d0ddd92b25e6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e74369ec6ac4a61afef3d6e54f13ba83/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9f44e8a4c87e008fbd0aba40ef77a440/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/6972fd90789e19c7e0b51097d5cec8f5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e4d7f9347dab6d62e727a038a66e38b4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fc0b84e51e413739f216516d25030d50/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:8:5-30:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/761104cf1965210976e33c6ecd2c7812/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/761104cf1965210976e33c6ecd2c7812/AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:14:9-40
+activity#com.jjdeveloper.notecloud.view.MainActivity
+ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:16:9-24:20
+	android:label
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:17:13-56
+	android:theme
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:18:13-56
+	android:name
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:16:19-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.jjdeveloper.notecloud.view.FeedActivity
+ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:25:9-29:20
+	android:label
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:27:13-56
+	android:theme
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:28:13-56
+	android:name
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml:26:13-46
+uses-sdk
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/132a4a0ea3beecebb660dc2fd7fd00a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/132a4a0ea3beecebb660dc2fd7fd00a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b2c3750227f575051f2a73c3a5f80cea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b2c3750227f575051f2a73c3a5f80cea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/761104cf1965210976e33c6ecd2c7812/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/761104cf1965210976e33c6ecd2c7812/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/762f7a1806eca47ca169382c1fdf015b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/762f7a1806eca47ca169382c1fdf015b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/85a2b62d9d3a34f85269e44215ee409e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/85a2b62d9d3a34f85269e44215ee409e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/5111307b5341dc9754b0c82475a433cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/5111307b5341dc9754b0c82475a433cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/73bacfae6b2e1d85a2e992e72e6a04ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/73bacfae6b2e1d85a2e992e72e6a04ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/47a9029401668795218c9c661761469b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/47a9029401668795218c9c661761469b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b7fbc57243b044808a20f25770285e66/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b7fbc57243b044808a20f25770285e66/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/97898406ea58eeafd5eaad1e75b91f9f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/97898406ea58eeafd5eaad1e75b91f9f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/6181ad3a74fadca0eb448d78e5810a5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/6181ad3a74fadca0eb448d78e5810a5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e80939031a646863ddaa1a82f3fb6e38/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e80939031a646863ddaa1a82f3fb6e38/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/26e11fb8c24aac9f6e70d0ddd92b25e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/26e11fb8c24aac9f6e70d0ddd92b25e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e74369ec6ac4a61afef3d6e54f13ba83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/jerry/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e74369ec6ac4a61afef3d6e54f13ba83/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9f44e8a4c87e008fbd0aba40ef77a440/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9f44e8a4c87e008fbd0aba40ef77a440/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/6972fd90789e19c7e0b51097d5cec8f5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/6972fd90789e19c7e0b51097d5cec8f5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e4d7f9347dab6d62e727a038a66e38b4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e4d7f9347dab6d62e727a038a66e38b4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fc0b84e51e413739f216516d25030d50/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/jerry/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fc0b84e51e413739f216516d25030d50/AndroidManifest.xml:20:5-44
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+		ADDED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jerry/AndroidStudioProjects/NoteCloud/app/src/main/AndroidManifest.xml
