@@ -1,11 +1,14 @@
 package com.jjdeveloper.notecloud.controller;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.jjdeveloper.notecloud.config.Config;
+import com.jjdeveloper.notecloud.view.fragment.FavoritesFragment;
+import com.jjdeveloper.notecloud.view.fragment.LikesFragment;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -24,7 +27,7 @@ public class ActionAdapter {
     private static Context context;
     private static JSONObject json;
     private static String[] like = null, favorite = null;
-
+    public static int operacao = 0;
     /**
      *
      * @param userId id User do action
@@ -46,6 +49,19 @@ public class ActionAdapter {
     }
 
     private static class SendDeviceDetails extends AsyncTask<String, Void, String> {
+
+        private ProgressDialog progress = new ProgressDialog(context);
+        protected void onPreExecute() {
+            //display progress dialog.
+            if(operacao > 0) {
+                this.progress.show();
+                if(operacao == 1)
+                    this.progress.setMessage("Minhas curtidas...");
+                else if (operacao == 2)
+                    this.progress.setMessage("Meus favoritos...");
+            }
+
+        }
         @Override
         protected String doInBackground(String... params) {
 
@@ -97,6 +113,9 @@ public class ActionAdapter {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             Log.e("result", result); // this is expecting a response code to be sent from your server upon receiving the POST data
+            if (progress.isShowing()) {
+                progress.dismiss();
+            }
             String titulo = "Sucesso";
             JSONObject json = null;
             int codigo = 0;
@@ -116,6 +135,10 @@ public class ActionAdapter {
                     favorite = favorite.replace("]", "");
                     favorite = favorite.replace("\"", "");
                     ActionAdapter.favorite = favorite.split(",");
+                    if(operacao == 1)
+                        LikesFragment.noteLikes();
+                    else if(operacao == 2)
+                        FavoritesFragment.noteFavorites();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

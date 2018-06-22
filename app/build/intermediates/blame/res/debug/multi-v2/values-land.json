@@ -4,7 +4,7 @@
             "outputFile": "/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b2c3750227f575051f2a73c3a5f80cea/res/values-land/values-land.xml",
+                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/09da5b9dab1832f9d9edc95b718bc218/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/132a4a0ea3beecebb660dc2fd7fd00a6/res/values-land/values-land.xml",
+                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/e03f169ed1073b2539a185e8c6139ccd/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

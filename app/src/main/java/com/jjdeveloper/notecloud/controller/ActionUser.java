@@ -115,11 +115,11 @@ public final class ActionUser {
             try {
                 json = new JSONObject(result);
                 codigo = json.getInt("status");
-                if(codigo > 0){
-
+                if(codigo <= 0){
+                    msg = json.getString("msg");
+                    Toast.makeText(ActionUser.context, msg, Toast.LENGTH_LONG).show();
                 }
-                msg = json.getString("msg");
-                Toast.makeText(ActionUser.context, msg, Toast.LENGTH_LONG).show();
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }

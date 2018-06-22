@@ -97,14 +97,14 @@
                     android:id="@+id/lblShare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/btShareHolder"
-                    android:layout_alignRight="@+id/btShareHolder"
-                    android:layout_below="@+id/btShareHolder"
+                    android:layout_alignLeft="@+id/btFavoriteHolder"
+                    android:layout_alignRight="@+id/btFavoriteHolder"
+                    android:layout_below="@+id/btFavoriteHolder"
                     android:gravity="center"
                     android:text="1000" />
 
                 <ImageButton
-                    android:id="@+id/btShareHolder"
+                    android:id="@+id/btFavoriteHolder"
                     android:layout_width="43dp"
                     android:layout_height="40dp"
                     android:layout_toLeftOf="@+id/btCopyHolder"

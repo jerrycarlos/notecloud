@@ -11,4 +11,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_note">NoteInfo</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1431450907522749/8689304194</string>
+    <string name="app_pub">ca-app-pub-1431450907522749~2409168009</string>
 </resources>

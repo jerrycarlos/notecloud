@@ -42,6 +42,7 @@
         android:layout_gravity="bottom|left"
         android:layout_margin="@dimen/fab_margin"
         android:scaleType="center"
+        android:onClick="setFab2"
         app:backgroundTint="?android:attr/colorControlHighlight"
         app:fabSize="mini"
         app:srcCompat="@drawable/ic_action_topo"

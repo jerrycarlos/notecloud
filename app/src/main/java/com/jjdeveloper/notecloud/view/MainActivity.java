@@ -35,9 +35,10 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import static com.jjdeveloper.notecloud.config.Config.PREF_NAME;
+
 public class MainActivity extends AppCompatActivity {
     public final Context activity = MainActivity.this;
-    public static final String PREF_NAME = "MainActivityPreferences";
     private TextView userEmail, userPass;
     private CheckBox chkManter;
     public static UserModel userLogado;
@@ -49,8 +50,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initObjects();
         SharedPreferences credenciais = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
-        String login = credenciais.getString("login", "");
-        String senha = credenciais.getString("senha", "");
+        //for debug mode
+        String login = "jerry@gmail.com";
+        String senha = "123456";
+        //String login = credenciais.getString("login", "");
+        //String senha = credenciais.getString("senha", "");
         if(!login.equals("") && !senha.equals(""))
             loginUser(login,senha);
     }
@@ -65,10 +69,14 @@ public class MainActivity extends AppCompatActivity {
         this.userLogin = userEmail.getText().toString();
         this.userSenha = userPass.getText().toString();
         if(userLogin.trim().equals("")){
-            Toast.makeText(getApplicationContext(),"Insira seu login!", Toast.LENGTH_SHORT).show();
+            userEmail.setError("Insira seu login!");
+            userEmail.requestFocus();
+            //Toast.makeText(getApplicationContext(),"Insira seu login!", Toast.LENGTH_SHORT).show();
             return;
         }else if(userSenha.trim().equals("")){
-            Toast.makeText(getApplicationContext(),"Insira seu senha!", Toast.LENGTH_SHORT).show();
+            userPass.setError("Insira sua senha!");
+            userPass.requestFocus();
+            //Toast.makeText(getApplicationContext(),"Insira sua senha!", Toast.LENGTH_SHORT).show();
             return;
         }
         if(chkManter.isChecked())

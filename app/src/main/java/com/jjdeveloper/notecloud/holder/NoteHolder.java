@@ -24,7 +24,7 @@ public class NoteHolder extends RecyclerView.ViewHolder {
         noteId = itemView.findViewById(R.id.noteIdHolder);
         btLike = itemView.findViewById(R.id.btLikeHolderMy);
         btFavorite = itemView.findViewById(R.id.btFavoriteHolderMy);
-        btShare = itemView.findViewById(R.id.btShareHolder);
+        btShare = itemView.findViewById(R.id.btFavoriteHolder);
         btCopy = itemView.findViewById(R.id.btCopyHolder);
         lblLike = itemView.findViewById(R.id.lblLike);
         lblFavorite = itemView.findViewById(R.id.lblFavorite);

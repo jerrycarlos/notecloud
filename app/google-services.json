@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1058331049979",
+    "firebase_url": "https://notecloud-c384c.firebaseio.com",
+    "project_id": "notecloud-c384c",
+    "storage_bucket": "notecloud-c384c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058331049979:android:891feac5b27cf2ca",
+        "android_client_info": {
+          "package_name": "com.jjdeveloper.notecloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058331049979-m2c552jdof9niv5sd8u4ri3qvr1pbnon.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jjdeveloper.notecloud",
+            "certificate_hash": "a532caed2e6eac4ddb9fb51dc378be10003bc456"
+          }
+        },
+        {
+          "client_id": "1058331049979-64g0vl56vjc5svj39kl613efombvl6js.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1058331049979-64g0vl56vjc5svj39kl613efombvl6js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYTXeEXPK-TAiKN4XwxwK4soMMQRiIteo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058331049979-64g0vl56vjc5svj39kl613efombvl6js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
