@@ -2,6 +2,7 @@ package com.jjdeveloper.notecloud.view.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +15,7 @@ import com.jjdeveloper.notecloud.R;
 import com.jjdeveloper.notecloud.adapter.NoteAdapter;
 import com.jjdeveloper.notecloud.controller.NoteControl;
 import com.jjdeveloper.notecloud.model.NoteModel;
+import com.jjdeveloper.notecloud.view.FeedActivity;
 
 import java.util.ArrayList;
 
@@ -23,6 +25,7 @@ public class MyNotesFragment extends Fragment {
     private Context activity;
     RecyclerView mRecyclerView;
     static SwipeRefreshLayout mSwipeRefresh;
+    FloatingActionButton fab, fab2;
     private int id = 1;
     public static NoteAdapter mAdapter;
 
@@ -44,6 +47,10 @@ public class MyNotesFragment extends Fragment {
         initObjects();
         setupRecycler();
         NoteControl.myNotes(activity);
+        fab = FeedActivity.fab;
+        fab2 = FeedActivity.fab2;
+        fab.setVisibility(View.VISIBLE);
+        fab2.setVisibility(View.INVISIBLE);
         return view;
     }
 
@@ -55,14 +62,14 @@ public class MyNotesFragment extends Fragment {
     private void setupRecycler() {
         // Criando o StaggeredGridLayoutManager com duas colunas, descritas no primeiro argumento
         // e no sentido vertical (como uma lista).
-        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
         //mRecyclerView = new RecyclerView(getApplicationContext());
         mRecyclerView.setLayoutManager(layoutManager);
         // Adiciona o adapter que irá anexar os objetos à lista.
         //mAdapter = new LineAdapter(new ArrayList<>(0));
         mRecyclerView.setAdapter(mAdapter);
 
-        /*mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+        mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
@@ -74,7 +81,7 @@ public class MyNotesFragment extends Fragment {
                     fab2.show();
                 }
             }
-        });*/
+        });
 
     }
 }

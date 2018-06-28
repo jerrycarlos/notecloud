@@ -3,6 +3,7 @@ package com.jjdeveloper.notecloud.view.fragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
@@ -15,6 +16,7 @@ import com.jjdeveloper.notecloud.R;
 import com.jjdeveloper.notecloud.adapter.NoteAdapter;
 import com.jjdeveloper.notecloud.controller.ActionAdapter;
 import com.jjdeveloper.notecloud.model.NoteModel;
+import com.jjdeveloper.notecloud.view.FeedActivity;
 import com.jjdeveloper.notecloud.view.MainActivity;
 
 import java.util.ArrayList;
@@ -27,7 +29,7 @@ public class LikesFragment extends Fragment {
     static SwipeRefreshLayout mSwipeRefresh;
     private int id = 1;
     public static NoteAdapter mAdapter;
-
+    FloatingActionButton fab, fab2;
     public LikesFragment() {
 
         // Required empty public constructor
@@ -47,6 +49,10 @@ public class LikesFragment extends Fragment {
         setupRecycler();
         ActionAdapter.operacao = 1;
         ActionAdapter.action(MainActivity.userLogado.getId(), activity);
+        fab = FeedActivity.fab;
+        fab2 = FeedActivity.fab2;
+        fab.setVisibility(View.VISIBLE);
+        fab2.setVisibility(View.INVISIBLE);
         //noteLikes();
         return view;
     }
@@ -59,14 +65,14 @@ public class LikesFragment extends Fragment {
     private void setupRecycler() {
         // Criando o StaggeredGridLayoutManager com duas colunas, descritas no primeiro argumento
         // e no sentido vertical (como uma lista).
-        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
         //mRecyclerView = new RecyclerView(getApplicationContext());
         mRecyclerView.setLayoutManager(layoutManager);
         // Adiciona o adapter que irá anexar os objetos à lista.
         //mAdapter = new LineAdapter(new ArrayList<>(0));
         mRecyclerView.setAdapter(mAdapter);
 
-        /*mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+        mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
@@ -78,7 +84,7 @@ public class LikesFragment extends Fragment {
                     fab2.show();
                 }
             }
-        });*/
+        });
 
     }
 

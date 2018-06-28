@@ -41,7 +41,8 @@ public class NoteActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                Intent i = new Intent(activity, FeedActivity.class);
+                startActivity(i);
             }
         });
         activity = getApplicationContext();

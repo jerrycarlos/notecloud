@@ -23,7 +23,6 @@
     <include layout="@layout/content_feed" />
 
 
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -31,8 +30,8 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         android:scaleType="center"
-        app:backgroundTint="#364cc8"
-        app:fabSize="mini"
+        app:backgroundTint="@color/fabAction"
+        app:fabSize="normal"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
     <android.support.design.widget.FloatingActionButton
@@ -42,10 +41,10 @@
         android:layout_gravity="bottom|left"
         android:layout_margin="@dimen/fab_margin"
         android:scaleType="center"
-        android:onClick="setFab2"
-        app:backgroundTint="?android:attr/colorControlHighlight"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/ic_action_topo"
+        android:visibility="invisible"
+        app:backgroundTint="@color/fabAction"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/arrow_up_float"
         tools:ignore="NewApi,VectorDrawableCompat" />
 
 </android.support.design.widget.CoordinatorLayout>

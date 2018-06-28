@@ -19,11 +19,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jjdeveloper.notecloud.R;
+import com.jjdeveloper.notecloud.controller.CarregarImagem;
 import com.jjdeveloper.notecloud.model.NoteModel;
+import com.jjdeveloper.notecloud.view.fragment.AddNote;
 import com.jjdeveloper.notecloud.view.fragment.FavoritesFragment;
 import com.jjdeveloper.notecloud.view.fragment.FeedFragment;
 import com.jjdeveloper.notecloud.view.fragment.LikesFragment;
@@ -34,26 +37,26 @@ import static com.jjdeveloper.notecloud.config.Config.PREF_NAME;
 public class FeedActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    android.support.v4.app.FragmentManager fragment;
+    public static android.support.v4.app.FragmentManager fragment;
     Context activity;
     NavigationView navigationView;
     DrawerLayout drawer;
     TextView labelUser, labelEmail;
-    private FloatingActionButton fab;
-    private FloatingActionButton fab2;
+    public static Toolbar toolbar;
+    public static FloatingActionButton fab;
+    public static FloatingActionButton fab2;
     public static NoteModel clickedNote;
+    public static ImageView imgProfile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         activity = getApplicationContext();
         //MobileAds.initialize(this, "ca-app-pub-1431450907522749~2409168009");
         //ActionAdapter.action(MainActivity.userLogado.getId(),activity);
         fragment = getSupportFragmentManager();
-        setTitle("NoteCloud Feed");
-        fragment.beginTransaction().replace(R.id.content_fragment, new FeedFragment()).commit();
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         View navHeader = navigationView.getHeaderView(0);
@@ -64,21 +67,27 @@ public class FeedActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                fab.setVisibility(View.INVISIBLE);
+                fab2.setVisibility(View.INVISIBLE);
+                setTitle("Adicionar Nota");
+                fragment.beginTransaction().replace(R.id.content_fragment, new AddNote()).commit();
+
             }
         });
-
-        /*fab2.setOnClickListener(new View.OnClickListener() {
+        /*fab.setVisibility(View.VISIBLE);
+        fab2.setVisibility(View.INVISIBLE);*/
+        fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                RecyclerView r = (RecyclerView) FeedFragment.view.findViewById(R.id.recycler_list);
                 //StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
-                StaggeredGridLayoutManager layoutManager = (StaggeredGridLayoutManager) mRecyclerView
+                StaggeredGridLayoutManager layoutManager = (StaggeredGridLayoutManager) r
                         .getLayoutManager();
                 layoutManager.scrollToPositionWithOffset(0, 0);
                 fab2.hide();
             }
-        });*/
+        });
 
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -86,11 +95,20 @@ public class FeedActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        imgProfile = navHeader.findViewById(R.id.imgProfile);
         labelUser.setText(MainActivity.userLogado.getLogin());
         labelEmail.setText(MainActivity.userLogado.getEmail());
+        setTitle("NoteCloud Feed");
+        fragment.beginTransaction().replace(R.id.content_fragment, new FeedFragment()).commit();
 
         /*AdsSetting ads = new AdsSetting(activity);
         ads.start();*/
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
@@ -99,14 +117,6 @@ public class FeedActivity extends AppCompatActivity
         Intent i = new Intent(FeedActivity.this, MainActivity.class);
         startActivity(i);
         finishAffinity();
-    }
-
-    public void setFab2(View v){
-        RecyclerView r = (RecyclerView) FeedFragment.view.findViewById(R.id.recycler_list);
-        //StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
-        StaggeredGridLayoutManager layoutManager = (StaggeredGridLayoutManager) r
-                .getLayoutManager();
-        layoutManager.scrollToPositionWithOffset(0, 0);
     }
 
     private void esqueceUsuario(){
@@ -176,17 +186,61 @@ public class FeedActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             FeedFragment.swipeRefresh = 0;
             setTitle("NoteCloud Feed");
+            fab2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    RecyclerView r = (RecyclerView) FeedFragment.view.findViewById(R.id.recycler_list);
+                    //StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+                    StaggeredGridLayoutManager layoutManager = (StaggeredGridLayoutManager) r
+                            .getLayoutManager();
+                    layoutManager.scrollToPositionWithOffset(0, 0);
+                    fab2.hide();
+                }
+            });
             fragment.beginTransaction().replace(R.id.content_fragment, new FeedFragment()).commit();
         } else if (id == R.id.nav_profile) {
 
         } else if (id == R.id.nav_mynotes) {
-            setTitle("My Notes");
+            setTitle("Minhas Notas");
+            fab2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    RecyclerView r = (RecyclerView) MyNotesFragment.view.findViewById(R.id.recycler_list);
+                    //StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+                    StaggeredGridLayoutManager layoutManager = (StaggeredGridLayoutManager) r
+                            .getLayoutManager();
+                    layoutManager.scrollToPositionWithOffset(0, 0);
+                    fab2.hide();
+                }
+            });
             fragment.beginTransaction().replace(R.id.content_fragment, new MyNotesFragment()).commit();
         } else if (id == R.id.nav_likes) {
-            setTitle("Likes");
+            setTitle("Minhas Curtidas");
+            fab2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    RecyclerView r = (RecyclerView) LikesFragment.view.findViewById(R.id.recycler_list);
+                    //StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+                    StaggeredGridLayoutManager layoutManager = (StaggeredGridLayoutManager) r
+                            .getLayoutManager();
+                    layoutManager.scrollToPositionWithOffset(0, 0);
+                    fab2.hide();
+                }
+            });
             fragment.beginTransaction().replace(R.id.content_fragment, new LikesFragment()).commit();
         } else if (id == R.id.nav_favorites) {
-            setTitle("My Favorites");
+            setTitle("Minhas Favoritas");
+            fab2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    RecyclerView r = (RecyclerView) FavoritesFragment.view.findViewById(R.id.recycler_list);
+                    //StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+                    StaggeredGridLayoutManager layoutManager = (StaggeredGridLayoutManager) r
+                            .getLayoutManager();
+                    layoutManager.scrollToPositionWithOffset(0, 0);
+                    fab2.hide();
+                }
+            });
             fragment.beginTransaction().replace(R.id.content_fragment, new FavoritesFragment()).commit();
         }
 

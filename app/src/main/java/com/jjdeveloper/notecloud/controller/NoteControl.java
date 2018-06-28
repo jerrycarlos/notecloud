@@ -85,25 +85,6 @@ public class NoteControl {
         }
     }
 
-
-    public static void addNote(NoteModel note, Context c){
-        operacao = 4;
-        activity = c;
-        JSONObject postData = new JSONObject();
-        try {
-            postData.put("noteId", note.getNoteId());
-            SendDeviceDetails t = new SendDeviceDetails();
-            t.execute(Config.ip_servidor+"/addNote.php", postData.toString());
-            //ip externo http://179.190.193.231/cadastro.php
-            //ip interno 192.168.0.21 minha casa
-            //ip interno hotspot celular 192.168.49.199[
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-
     private static class SendDeviceDetails extends AsyncTask<String, Void, String> {
         private ProgressDialog progress = new ProgressDialog(activity);
 
@@ -177,7 +158,7 @@ public class NoteControl {
             Long codigo = null;
             String msg = null;
             int id = -1, periodo = 0;
-            Log.i("result",result);
+            Log.e("result",result);
             try {
                 if(result.length()>50) {
                     // Variavel de controle do progress, evento de swipe bloqueia o progress
@@ -225,8 +206,9 @@ public class NoteControl {
                             }
                         }
                     }
-                }else
+                }else{
                     Toast.makeText(activity,"Nenhuma nota no momento!",Toast.LENGTH_LONG).show();
+                }
             } catch (JSONException e) {
                 e.printStackTrace();
             }

@@ -5,42 +5,42 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.1.2"
-    timestamp="1529647634466"
+    timestamp="1530154029169"
     token="3041706326639819118"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="261" />
+        duration="754" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="59" />
+        duration="15" />
     <task
         name="verifier"
-        duration="5" />
+        duration="35" />
 
     <artifact
         location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
+        location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
         location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
     <artifact
         location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
         location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
     <artifact
         location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -51,11 +51,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1529646235653"
+        timestamp="1530152638341"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
@@ -89,29 +86,32 @@
         <artifact
             location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
+        <artifact
+            location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1529647634466"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1530154029169"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
+            location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
             location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/split-apk/debug/slices/slice_9.apk"

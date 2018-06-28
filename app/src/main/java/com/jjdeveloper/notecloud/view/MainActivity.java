@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.jjdeveloper.notecloud.R;
 import com.jjdeveloper.notecloud.config.Config;
 import com.jjdeveloper.notecloud.controller.ActionAdapter;
+import com.jjdeveloper.notecloud.controller.CarregarImagem;
 import com.jjdeveloper.notecloud.model.UserModel;
 
 import org.json.JSONException;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     public static UserModel userLogado;
     public static long result = -1;
     private String userLogin, userSenha;
+    public static String imagem = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -204,12 +206,18 @@ public class MainActivity extends AppCompatActivity {
             Log.i("result",result);
             try {
                 json = new JSONObject(result);
-                if (json.length() > 2) {
+                codigo = json.getLong("status");
+                if (codigo > 0) {
                     id = json.getInt("id");
                     nome = json.getString("nome");
                     email = json.getString("email");
                     login = json.getString("login");
                     telefone = json.getString("telefone");
+                    imagem = json.getString("imagem");
+                    if(imagem != null) {
+                        String url = Config.ip_servidor + "/profiles/" + imagem + ".png";
+                        CarregarImagem.baixarImagem(id, url, activity);
+                    }
                     UserModel usr = new UserModel(nome, email, login, telefone);
                     usr.setId(id);
                     MainActivity.userLogado = usr;
@@ -218,7 +226,6 @@ public class MainActivity extends AppCompatActivity {
                     mudaTela();
                 }else{
                     titulo  = "Erro";
-                    codigo = json.getLong("erro");
                     msg = json.getString("msg");
                     AlertDialog.Builder builder = new AlertDialog.Builder(activity);
 
