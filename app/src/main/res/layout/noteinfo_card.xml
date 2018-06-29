@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/shape_background"
+    android:background="@color/background"
     android:orientation="vertical"
     android:paddingLeft="5dp"
     android:paddingRight="5dp">
@@ -12,11 +12,12 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="10dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="5dp">
+        tools:layout_editor_absoluteX="5dp"
+        app:cardCornerRadius="15dp">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -25,7 +26,35 @@
             android:orientation="vertical"
             tools:layout_editor_absoluteX="5dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/shape_edittext_border_top">
 
+                <TextView
+                    android:id="@+id/txtTitleCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:maxLength="35"
+                    android:textSize="22sp"
+                    tools:text="Lorem Ipsum" />
+
+                <TextView
+                    android:id="@+id/noteAuthorCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="\@author"
+                    android:gravity="center"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,17 +64,6 @@
                 android:layout_weight="0"
                 android:orientation="vertical"
                 android:padding="8dp">
-
-                <TextView
-                    android:id="@+id/txtTitleCard"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_textview"
-                    android:gravity="center"
-                    android:maxLength="35"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="25sp"
-                    tools:text="TITULO DA NOTA DESTE TAMANHO" />
 
                 <EditText
                     android:id="@+id/txtDescricaoCard"
@@ -65,29 +83,20 @@
                     android:overScrollMode="always"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:text="Texto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  textoTexto  texto  texto  texto  texto  texto  texto BABABABABABA BABABABA" />
-
-                <TextView
-                    android:id="@+id/noteAuthorCard"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="\@author"
-                    android:textColor="@android:color/background_dark"
-                    android:textSize="20sp" />
+                    android:textAlignment="center"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut ornare metus. Vivamus eget tellus lectus. Morbi ac placerat urna. Morbi ut magna massa. Maecenas id consequat urna, quis suscipit eros. Vivamus facilisis lobortis laoreet."/>
 
                 <TextView
                     android:id="@+id/noteIdCard"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="5dp"
                     android:text="#noteNumber"
                     android:textColor="@android:color/background_dark"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:background="@drawable/shape_border"/>
             </LinearLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -105,8 +114,11 @@
                     android:layout_toRightOf="@+id/btLikeCard"
                     android:clickable="true"
                     android:src="@drawable/ic_action_unfavorite"
-                    app:backgroundTint="?android:attr/panelBackground"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:backgroundTint="@android:color/transparent"
+                    app:backgroundTintMode="src_over"
+                    app:elevation="0dp"
+                    app:borderWidth="0dp"/>
 
                 <android.support.design.widget.FloatingActionButton
                     android:id="@+id/btLikeCard"
@@ -115,9 +127,13 @@
                     android:layout_alignParentRight="false"
                     android:layout_margin="5dp"
                     android:clickable="true"
-                    android:src="@drawable/ic_action_dislike"
-                    app:backgroundTint="?android:attr/panelBackground"
-                    app:fabSize="normal" />
+                    android:src="@drawable/ic_action_like"
+                    app:fabSize="normal"
+                    android:backgroundTint="@android:color/transparent"
+                    app:backgroundTintMode="src_over"
+                    app:elevation="0dp"
+                    app:borderWidth="0dp"
+                    />
 
                 <android.support.design.widget.FloatingActionButton
                     android:id="@+id/btShareCard"
@@ -128,8 +144,11 @@
                     android:layout_toLeftOf="@+id/btCopyCard"
                     android:clickable="true"
                     android:src="@drawable/ic_action_share"
-                    app:backgroundTint="?android:attr/panelBackground"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:backgroundTint="@android:color/transparent"
+                    app:backgroundTintMode="src_over"
+                    app:elevation="0dp"
+                    app:borderWidth="0dp"/>
 
                 <android.support.design.widget.FloatingActionButton
                     android:id="@+id/btCopyCard"
@@ -139,15 +158,17 @@
                     android:layout_margin="5dp"
                     android:clickable="true"
                     android:src="@drawable/ic_action_copy"
-                    app:backgroundTint="?android:attr/panelBackground"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:backgroundTint="@android:color/transparent"
+                    app:backgroundTintMode="src_over"
+                    app:elevation="0dp"
+                    app:borderWidth="0dp"/>
 
             </RelativeLayout>
 
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
-
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
@@ -156,5 +177,6 @@
         android:layout_weight="0"
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
 
 </LinearLayout>
