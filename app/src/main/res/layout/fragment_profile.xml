@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ProfileFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView3"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="top|center"
+                    android:src="@mipmap/ic_launcher_round" />
+
+                <TextView
+                    android:id="@+id/labelNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="nome usuario" />
+
+                <TextView
+                    android:id="@+id/labelLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:text="@string/nav_header_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <TextView
+                    android:id="@+id/labelEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nav_header_subtitle" />
+
+                <TextView
+                    android:id="@+id/labelTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="99999-9999" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Estatísticas"
+                    android:textSize="15sp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btLikeCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/textView7"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_action_dislike"
+                    app:backgroundTint="?android:attr/panelBackground"
+                    app:fabSize="normal" />
+
+                <TextView
+                    android:id="@+id/lblLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btLikeCard"
+                    android:layout_alignRight="@+id/btLikeCard"
+                    android:layout_below="@+id/btLikeCard"
+                    android:gravity="center"
+                    android:text="1000" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btFavoriteCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_below="@+id/textView7"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/btLikeCard"
+                    android:clickable="true"
+                    android:src="@drawable/ic_action_unfavorite"
+                    app:backgroundTint="?android:attr/panelBackground"
+                    app:fabSize="normal" />
+
+                <TextView
+                    android:id="@+id/lblFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btFavoriteCard"
+                    android:layout_alignRight="@+id/btFavoriteCard"
+                    android:layout_below="@+id/btFavoriteCard"
+                    android:gravity="center"
+                    android:text="1000" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btShareCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/textView7"
+                    android:layout_margin="5dp"
+                    android:layout_toLeftOf="@+id/btCopyCard"
+                    android:clickable="true"
+                    android:src="@drawable/ic_action_share"
+                    app:backgroundTint="?android:attr/panelBackground"
+                    app:fabSize="normal" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btCopyCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView7"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_action_copy"
+                    app:backgroundTint="?android:attr/panelBackground"
+                    app:fabSize="normal" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

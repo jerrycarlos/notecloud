@@ -51,6 +51,6 @@ public class NoteInfoFragment extends Fragment {
     private void initObjects(){
         title = view.findViewById(R.id.txtTitleCard);
         descricao = view.findViewById(R.id.txtDescricaoCard);
-        noteId = view.findViewById(R.id.noteIdCard);
+        //noteId = view.findViewById(R.id.noteIdCard);
     }
 }

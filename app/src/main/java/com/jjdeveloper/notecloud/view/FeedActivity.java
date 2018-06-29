@@ -31,6 +31,7 @@ import com.jjdeveloper.notecloud.view.fragment.FavoritesFragment;
 import com.jjdeveloper.notecloud.view.fragment.FeedFragment;
 import com.jjdeveloper.notecloud.view.fragment.LikesFragment;
 import com.jjdeveloper.notecloud.view.fragment.MyNotesFragment;
+import com.jjdeveloper.notecloud.view.fragment.ProfileFragment;
 
 import static com.jjdeveloper.notecloud.config.Config.PREF_NAME;
 
@@ -199,6 +200,8 @@ public class FeedActivity extends AppCompatActivity
             });
             fragment.beginTransaction().replace(R.id.content_fragment, new FeedFragment()).commit();
         } else if (id == R.id.nav_profile) {
+            setTitle("Meus Dados");
+            fragment.beginTransaction().replace(R.id.content_fragment, new ProfileFragment()).commit();
 
         } else if (id == R.id.nav_mynotes) {
             setTitle("Minhas Notas");

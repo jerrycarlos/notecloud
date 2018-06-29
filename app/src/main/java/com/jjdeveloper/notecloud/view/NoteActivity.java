@@ -26,7 +26,7 @@ import com.jjdeveloper.notecloud.model.NoteModel;
 
 public class NoteActivity extends AppCompatActivity {
     private NoteModel note;
-    private TextView title, descricao, noteId, author;
+    private TextView title, descricao, noteId, author, date, lblLike, lblFavorite;
     private String paramLike, paramFavorite;
     private ImageButton btLike, btFavorite, btShare, btCopy;
     private Context activity;
@@ -131,8 +131,11 @@ public class NoteActivity extends AppCompatActivity {
         descricao.setText(note.getBody());
         descricao.setClickable(false);
         descricao.setFocusable(false);
-        noteId.setText(String.valueOf(note.getNoteId()));
-        author.setText("@"+note.getAuthor());
+        author.setText("@" + note.getAuthor());
+        date.setText("Data criação: " + note.getDate_created());
+        lblLike.setText(String.valueOf(note.getLikes()));
+        lblFavorite.setText(String.valueOf(note.getFavorites()));
+
         if(paramLike.equals("1")) {
             btLike.setImageResource(R.drawable.ic_action_like);
             btLike.setTag(R.drawable.ic_action_like);
@@ -156,12 +159,14 @@ public class NoteActivity extends AppCompatActivity {
     private void initObjects(){
         title = findViewById(R.id.txtTitleCard);
         descricao = findViewById(R.id.txtDescricaoCard);
-        noteId = findViewById(R.id.noteIdCard);
         author = findViewById(R.id.noteAuthorCard);
         btLike = findViewById(R.id.btLikeCard);
         btFavorite = findViewById(R.id.btFavoriteCard);
         btShare = findViewById(R.id.btShareCard);
         btCopy = findViewById(R.id.btCopyCard);
+        date = findViewById(R.id.noteDateCard);
+        lblLike = findViewById(R.id.lblLike);
+        lblFavorite = findViewById(R.id.lblFavorite);
         Intent it = getIntent();
         if(it != null) {
             Bundle params = it.getExtras();

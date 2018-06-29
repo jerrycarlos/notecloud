@@ -7,10 +7,9 @@ public class NoteModel {
     private int likes, favorites, shares, fk_user;
     private int visualization; // public, private, anonymous
     private int noteId;
+    private String date_created;
 
-    public NoteModel(){
-
-    }
+    public NoteModel(){    }
 
     public String getAuthor() {
         return author;
@@ -83,4 +82,8 @@ public class NoteModel {
     public void setVisualization(int visualization) {
         this.visualization = visualization;
     }
+
+    public String getDate_created() { return date_created; }
+
+    public void setDate_created(String date_created) { this.date_created = date_created; }
 }

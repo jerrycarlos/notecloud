@@ -47,7 +47,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteHolderTest> {
             body = body.substring(0, 91);
             holder.descricao.setText(body + "...");
         }else holder.descricao.setText(body);
-        holder.noteId.setText("#" + String.valueOf(noteList.get(position).getNoteId()));
+        holder.noteId.setText("@" + noteList.get(position).getNoteId());
         //holder.lblLike.setText(String.valueOf(noteList.get(position).getLikes()));
         //holder.lblFavorite.setText(String.valueOf(noteList.get(position).getFavorites()));
         //holder.lblShare.setText(String.valueOf(noteList.get(position).getShares()));
