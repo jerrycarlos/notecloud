@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.annotation.RequiresApi;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import com.jjdeveloper.notecloud.R;
 import com.jjdeveloper.notecloud.config.Config;
 import com.jjdeveloper.notecloud.controller.ActionAdapter;
 import com.jjdeveloper.notecloud.controller.ActionUser;
+import com.jjdeveloper.notecloud.controller.NoteControl;
 import com.jjdeveloper.notecloud.holder.NoteHolderTest;
 import com.jjdeveloper.notecloud.model.NoteModel;
 import com.jjdeveloper.notecloud.view.FeedActivity;
@@ -47,7 +49,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteHolderTest> {
             body = body.substring(0, 91);
             holder.descricao.setText(body + "...");
         }else holder.descricao.setText(body);
-        holder.noteId.setText("@" + noteList.get(position).getNoteId());
+        holder.noteId.setText("#" + noteList.get(position).getNoteId());
         //holder.lblLike.setText(String.valueOf(noteList.get(position).getLikes()));
         //holder.lblFavorite.setText(String.valueOf(noteList.get(position).getFavorites()));
         //holder.lblShare.setText(String.valueOf(noteList.get(position).getShares()));
@@ -170,6 +172,10 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteHolderTest> {
                 Toast.makeText(activity,"Nota copiada para área de transferência.",Toast.LENGTH_SHORT).show();
             }
         });*/
+        if(position == noteList.size()-1 && Config.OFFSET <= noteList.size() && NoteControl.operacao == 1){
+            Config.OFFSET = noteList.size();
+            NoteControl.buscaNotas(activity, FeedFragment.mAdapter);
+        }
     }
 
     public int getItemCount() {

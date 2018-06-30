@@ -3,7 +3,6 @@ package com.jjdeveloper.notecloud.adfly;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -24,10 +23,10 @@ public class AdsSetting {
     //Configuração
 
     //Ads Interstitial = Ads Full Screen que mostrar a propaganda
-    private String uuidInterstitial = Config.uuidInterstitial; //SEU UUID
+    private String uuidInterstitial = Config.UUID_INTERSTITIAL; //SEU UUID
 
     //Ads RewardedVideoAd = Ads Video
-    private String uuidRewardedVideoAd = Config.uuidRewardedVideoAd; //SEU UUID
+    private String uuidRewardedVideoAd = Config.UUID_REWARDED_VIDEO_AD; //SEU UUID
 
     private Context mContext;
     private SharedPreferences sharedPreferences;

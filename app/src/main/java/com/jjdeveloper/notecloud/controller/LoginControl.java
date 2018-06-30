@@ -37,7 +37,7 @@ public class LoginControl {
             postData.put("senha",senha);
 
             SendDeviceDetails t = new SendDeviceDetails();
-            t.execute(Config.ip_servidor+"/login.php", postData.toString());
+            t.execute(Config.IP_SERVIDOR +"/login.php", postData.toString());
             //ip externo http://179.190.193.231/cadastro.php
             //ip interno 192.168.0.21 minha casa
             //ip interno hotspot celular 192.168.49.199[
@@ -130,7 +130,7 @@ public class LoginControl {
                     telefone = json.getString("telefone");
                     imagem = json.getString("imagem");
                     if(imagem != null) {
-                        String url = Config.ip_servidor + "/profiles/" + imagem + ".png";
+                        String url = Config.IP_SERVIDOR + "/profiles/" + imagem + ".png";
                         CarregarImagem.baixarImagem(id, url, activity);
                     }
                     UserModel usr = new UserModel(nome, email, login, telefone);

@@ -2,11 +2,8 @@ package com.jjdeveloper.notecloud.controller;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.design.widget.Snackbar;
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
 
 import com.jjdeveloper.notecloud.R;
@@ -14,8 +11,6 @@ import com.jjdeveloper.notecloud.adfly.AdsSetting;
 import com.jjdeveloper.notecloud.config.Config;
 import com.jjdeveloper.notecloud.model.NoteModel;
 import com.jjdeveloper.notecloud.view.FeedActivity;
-import com.jjdeveloper.notecloud.view.NoteActivity;
-import com.jjdeveloper.notecloud.view.fragment.AddNote;
 import com.jjdeveloper.notecloud.view.fragment.FeedFragment;
 
 import org.json.JSONException;
@@ -43,7 +38,7 @@ public class AddNoteControl {
             postData.put("fk_user", note.getFk_user());
             postData.put("acess", note.getVisualization());
             SendDeviceDetails t = new SendDeviceDetails();
-            t.execute(Config.ip_servidor+"/registerNote.php", postData.toString());
+            t.execute(Config.IP_SERVIDOR +"/registerNote.php", postData.toString());
             //ip externo http://179.190.193.231/cadastro.php
             //ip interno 192.168.0.21 minha casa
             //ip interno hotspot celular 192.168.49.199[

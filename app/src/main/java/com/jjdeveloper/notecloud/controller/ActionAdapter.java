@@ -4,13 +4,11 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.jjdeveloper.notecloud.config.Config;
 import com.jjdeveloper.notecloud.view.fragment.FavoritesFragment;
 import com.jjdeveloper.notecloud.view.fragment.LikesFragment;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -19,7 +17,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Vector;
 
 public class ActionAdapter {
 
@@ -39,7 +36,7 @@ public class ActionAdapter {
         try {
             postData.put("userId",userId);
             SendDeviceDetails t = new SendDeviceDetails();
-            t.execute(Config.ip_servidor+"/userActions.php", postData.toString());
+            t.execute(Config.IP_SERVIDOR +"/userActions.php", postData.toString());
             //ip externo http://179.190.193.231/cadastro.php
             //ip interno 192.168.0.21 minha casa
             //ip interno hotspot celular 192.168.49.199[

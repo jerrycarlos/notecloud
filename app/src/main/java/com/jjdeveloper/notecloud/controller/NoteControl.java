@@ -3,21 +3,14 @@ package com.jjdeveloper.notecloud.controller;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jjdeveloper.notecloud.adapter.NoteAdapter;
 import com.jjdeveloper.notecloud.config.Config;
-import com.jjdeveloper.notecloud.holder.NoteHolder;
 import com.jjdeveloper.notecloud.model.NoteModel;
-import com.jjdeveloper.notecloud.view.FeedActivity;
 import com.jjdeveloper.notecloud.view.MainActivity;
 import com.jjdeveloper.notecloud.view.fragment.FeedFragment;
-import com.jjdeveloper.notecloud.view.fragment.MyNotesFragment;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,11 +21,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
 
 public class NoteControl {
     private static Context activity;
-    private static int operacao;
+    public static int operacao;
     private static String[] like = null, favorite = null;
     private static NoteAdapter mAdapter;
     public static void buscaNotas(Context c, NoteAdapter adapter){
@@ -42,10 +34,9 @@ public class NoteControl {
         //ActionAdapter.action(MainActivity.userLogado.getId(),activity);
         JSONObject postData = new JSONObject();
         try {
-            postData.put("email","teste");
-            postData.put("senha","teste");
+            postData.put("offset",Config.OFFSET);
             SendDeviceDetails t = new SendDeviceDetails();
-            t.execute(Config.ip_servidor+"/buscaNotas.php", postData.toString());
+            t.execute(Config.IP_SERVIDOR +"/buscaNotas.php", postData.toString());
             //ip externo http://179.190.193.231/cadastro.php
             //ip interno 192.168.0.21 minha casa
             //ip interno hotspot celular 192.168.49.199[
@@ -62,7 +53,7 @@ public class NoteControl {
         try {
             postData.put("userId",MainActivity.userLogado.getId());
             SendDeviceDetails t = new SendDeviceDetails();
-            t.execute(Config.ip_servidor+"/minhasNotas.php", postData.toString());
+            t.execute(Config.IP_SERVIDOR +"/minhasNotas.php", postData.toString());
             //ip externo http://179.190.193.231/cadastro.php
             //ip interno 192.168.0.21 minha casa
             //ip interno hotspot celular 192.168.49.199[
@@ -79,7 +70,7 @@ public class NoteControl {
             postData.put("userId",MainActivity.userLogado.getId());
             postData.put("action", operacao);
             SendDeviceDetails t = new SendDeviceDetails();
-            t.execute(Config.ip_servidor+"/userActions.php", postData.toString());
+            t.execute(Config.IP_SERVIDOR +"/userActions.php", postData.toString());
             //ip externo http://179.190.193.231/cadastro.php
             //ip interno 192.168.0.21 minha casa
             //ip interno hotspot celular 192.168.49.199[
@@ -165,7 +156,7 @@ public class NoteControl {
             try {
                 if(result.length()>50) {
                     // Variavel de controle do progress, evento de swipe bloqueia o progress
-                    mAdapter.clearList();
+                    //mAdapter.clearList();
                     json = new JSONArray(result);
                     if (json.length() > 0) {
                         for (int i = 0; i < json.length(); i++) {

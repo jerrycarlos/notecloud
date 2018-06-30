@@ -14,7 +14,6 @@ import android.view.ViewGroup;
 import com.google.android.gms.ads.MobileAds;
 import com.jjdeveloper.notecloud.R;
 import com.jjdeveloper.notecloud.adapter.NoteAdapter;
-import com.jjdeveloper.notecloud.adfly.AdsSetting;
 import com.jjdeveloper.notecloud.config.Config;
 import com.jjdeveloper.notecloud.controller.ActionAdapter;
 import com.jjdeveloper.notecloud.controller.CarregarImagem;
@@ -72,7 +71,7 @@ public class FeedFragment extends Fragment {
     private void setupRecycler() {
         // Criando o StaggeredGridLayoutManager com duas colunas, descritas no primeiro argumento
         // e no sentido vertical (como uma lista).
-        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
         //LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         //mRecyclerView = new RecyclerView(getApplicationContext());
         mRecyclerView.setLayoutManager(layoutManager);
@@ -108,7 +107,7 @@ public class FeedFragment extends Fragment {
     public void onResume(){
         super.onResume();
         if(MainActivity.imagem != null) {
-            String url = Config.ip_servidor + "/profiles/" + MainActivity.imagem + ".png";
+            String url = Config.IP_SERVIDOR + "/profiles/" + MainActivity.imagem + ".png";
             CarregarImagem.baixarImagem(MainActivity.userLogado.getId(), url, activity);
         }
         //swipeRefresh = 0;
@@ -125,7 +124,7 @@ public class FeedFragment extends Fragment {
 
         // Stop refresh animation
         mSwipeRefresh.setRefreshing(false);
-        MobileAds.initialize(activity, Config.app_pub);
+        MobileAds.initialize(activity, Config.APP_PUB);
         //AdsSetting ads = new AdsSetting(activity);
         //ads.start();
     }

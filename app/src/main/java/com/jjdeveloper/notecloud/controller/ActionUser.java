@@ -1,21 +1,12 @@
 package com.jjdeveloper.notecloud.controller;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.widget.Toast;
 
-import com.jjdeveloper.notecloud.R;
-import com.jjdeveloper.notecloud.adapter.NoteAdapter;
 import com.jjdeveloper.notecloud.config.Config;
-import com.jjdeveloper.notecloud.holder.NoteHolder;
-import com.jjdeveloper.notecloud.model.NoteModel;
-import com.jjdeveloper.notecloud.view.FeedActivity;
-import com.jjdeveloper.notecloud.view.MainActivity;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -24,7 +15,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
 
 public final class ActionUser {
     //private static int userId, noteId;
@@ -47,7 +37,7 @@ public final class ActionUser {
             postData.put("noteId",noteId);
             postData.put("action",action);
             SendDeviceDetails t = new SendDeviceDetails();
-            t.execute(Config.ip_servidor+"/actionUser.php", postData.toString());
+            t.execute(Config.IP_SERVIDOR +"/actionUser.php", postData.toString());
             //ip externo http://179.190.193.231/cadastro.php
             //ip interno 192.168.0.21 minha casa
             //ip interno hotspot celular 192.168.49.199[

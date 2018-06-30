@@ -1,7 +1,6 @@
 package com.jjdeveloper.notecloud.view.fragment;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -91,10 +90,10 @@ public class AddNote extends Fragment {
             }
         });
 
-        MobileAds.initialize(activity, Config.app_pub);
+        MobileAds.initialize(activity, Config.APP_PUB);
         AdView adView = new AdView(activity);
         adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId(Config.banner_unit_id);
+        adView.setAdUnitId(Config.BANNER_UNIT_ID);
 
         mAdView = view.findViewById(R.id.adView2);
         AdRequest adRequest = new AdRequest.Builder().addTestDevice("F7FE7A31315748DB37FD0F08B7F254F9").build();
