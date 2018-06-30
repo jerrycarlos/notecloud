@@ -201,8 +201,9 @@ public class FeedActivity extends AppCompatActivity
             fragment.beginTransaction().replace(R.id.content_fragment, new FeedFragment()).commit();
         } else if (id == R.id.nav_profile) {
             setTitle("Meus Dados");
+            fab.hide();
+            fab2.hide();
             fragment.beginTransaction().replace(R.id.content_fragment, new ProfileFragment()).commit();
-
         } else if (id == R.id.nav_mynotes) {
             setTitle("Minhas Notas");
             fab2.setOnClickListener(new View.OnClickListener() {

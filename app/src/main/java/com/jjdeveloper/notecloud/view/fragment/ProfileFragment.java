@@ -37,6 +37,7 @@ public class ProfileFragment extends Fragment {
         super.onCreate(savedInstanceState);
         activity = getContext();
         u = MainActivity.userLogado;
+
     }
 
     @Override

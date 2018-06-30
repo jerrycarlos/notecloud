@@ -87,15 +87,15 @@
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut ornare metus. Vivamus eget tellus lectus. Morbi ac placerat urna. Morbi ut magna massa. Maecenas id consequat urna, quis suscipit eros. Vivamus facilisis lobortis laoreet."/>
 
                 <TextView
-                    android:id="@+id/noteIdCard"
+                    android:id="@+id/noteDateCard"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="5dp"
-                    android:text="#noteNumber"
+                    android:background="@drawable/shape_border"
+                    android:text="Data criação: "
                     android:textColor="@android:color/background_dark"
-                    android:textSize="16sp"
-                    android:background="@drawable/shape_border"/>
+                    android:textSize="16sp" />
             </LinearLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -110,60 +110,89 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="false"
-                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
                     android:layout_toRightOf="@+id/btLikeCard"
+                    android:backgroundTint="@android:color/transparent"
                     android:clickable="true"
                     android:src="@drawable/ic_action_unfavorite"
-                    app:fabSize="normal"
-                    android:backgroundTint="@android:color/transparent"
                     app:backgroundTintMode="src_over"
+                    app:borderWidth="0dp"
                     app:elevation="0dp"
-                    app:borderWidth="0dp"/>
+                    app:fabSize="normal" />
 
                 <android.support.design.widget.FloatingActionButton
                     android:id="@+id/btLikeCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="false"
-                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@android:color/transparent"
                     android:clickable="true"
                     android:src="@drawable/ic_action_like"
-                    app:fabSize="normal"
-                    android:backgroundTint="@android:color/transparent"
                     app:backgroundTintMode="src_over"
-                    app:elevation="0dp"
                     app:borderWidth="0dp"
-                    />
+                    app:elevation="0dp"
+                    app:fabSize="normal" />
+
 
                 <android.support.design.widget.FloatingActionButton
                     android:id="@+id/btShareCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="false"
-                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
                     android:layout_toLeftOf="@+id/btCopyCard"
+                    android:backgroundTint="@android:color/transparent"
                     android:clickable="true"
                     android:src="@drawable/ic_action_share"
-                    app:fabSize="normal"
-                    android:backgroundTint="@android:color/transparent"
                     app:backgroundTintMode="src_over"
+                    app:borderWidth="0dp"
                     app:elevation="0dp"
-                    app:borderWidth="0dp"/>
+                    app:fabSize="normal" />
 
                 <android.support.design.widget.FloatingActionButton
                     android:id="@+id/btCopyCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@android:color/transparent"
                     android:clickable="true"
                     android:src="@drawable/ic_action_copy"
-                    app:fabSize="normal"
-                    android:backgroundTint="@android:color/transparent"
                     app:backgroundTintMode="src_over"
+                    app:borderWidth="0dp"
                     app:elevation="0dp"
-                    app:borderWidth="0dp"/>
+                    app:fabSize="normal" />
 
+                <TextView
+                    android:id="@+id/lblLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btLikeCard"
+                    android:layout_alignRight="@+id/btLikeCard"
+                    android:layout_below="@+id/btLikeCard"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="1000" />
+
+                <TextView
+                    android:id="@+id/lblFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btFavoriteCard"
+                    android:layout_alignRight="@+id/btFavoriteCard"
+                    android:layout_below="@+id/btFavoriteCard"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="1000" />
             </RelativeLayout>
 
         </LinearLayout>

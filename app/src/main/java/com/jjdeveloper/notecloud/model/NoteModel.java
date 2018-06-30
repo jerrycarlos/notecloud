@@ -9,6 +9,7 @@ public class NoteModel {
     private int noteId;
     private String date_created;
 
+
     public NoteModel(){    }
 
     public String getAuthor() {

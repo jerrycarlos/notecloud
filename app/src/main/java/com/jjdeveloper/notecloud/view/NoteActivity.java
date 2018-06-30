@@ -139,7 +139,6 @@ public class NoteActivity extends AppCompatActivity {
         if(paramLike.equals("1")) {
             btLike.setImageResource(R.drawable.ic_action_like);
             btLike.setTag(R.drawable.ic_action_like);
-
         }
         else {
             btLike.setImageResource(R.drawable.ic_action_dislike);

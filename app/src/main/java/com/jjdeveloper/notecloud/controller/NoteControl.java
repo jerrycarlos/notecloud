@@ -34,9 +34,11 @@ public class NoteControl {
     private static Context activity;
     private static int operacao;
     private static String[] like = null, favorite = null;
-    public static void buscaNotas(Context c){
+    private static NoteAdapter mAdapter;
+    public static void buscaNotas(Context c, NoteAdapter adapter){
         operacao = 1;
         activity = c;
+        mAdapter = adapter;
         //ActionAdapter.action(MainActivity.userLogado.getId(),activity);
         JSONObject postData = new JSONObject();
         try {
@@ -52,9 +54,10 @@ public class NoteControl {
         }
     }
 
-    public static void myNotes(Context c){
+    public static void myNotes(Context c, NoteAdapter adapter){
         operacao = 2;
         activity = c;
+        mAdapter = adapter;
         JSONObject postData = new JSONObject();
         try {
             postData.put("userId",MainActivity.userLogado.getId());
@@ -162,48 +165,27 @@ public class NoteControl {
             try {
                 if(result.length()>50) {
                     // Variavel de controle do progress, evento de swipe bloqueia o progress
-
+                    mAdapter.clearList();
                     json = new JSONArray(result);
-                    if (operacao == 1){
-                        //FeedFragment.swipeRefresh = 0;
-                        FeedFragment.mAdapter.clearList();
-                        if (json.length() > 0) {
-                            //listNotte = new ArrayList<NoteModel>();
-                            FeedFragment.mAdapter.clearList();
-                            for (int i = 0; i < json.length(); i++) {
-                                JSONObject xx = json.getJSONObject(i);
-                                NoteModel note = new NoteModel();
-                                note.setNoteId(xx.getInt("id"));
-                                note.setTitle(xx.getString("title"));
-                                note.setBody(xx.getString("descricao"));
-                                note.setLikes(xx.getInt("likes"));
-                                note.setFavorites(xx.getInt("favorites"));
-                                note.setShares(xx.getInt("shares"));
+                    if (json.length() > 0) {
+                        for (int i = 0; i < json.length(); i++) {
+                            NoteModel note = new NoteModel();
+                            JSONObject xx = json.getJSONObject(i);
+                            note.setNoteId(xx.getInt("id"));
+                            note.setTitle(xx.getString("title"));
+                            note.setBody(xx.getString("descricao"));
+                            note.setLikes(xx.getInt("likes"));
+                            note.setFavorites(xx.getInt("favorites"));
+                            note.setShares(xx.getInt("shares"));
+                            note.setVisualization(xx.getInt("acess"));
+                            note.setDate_created(xx.getString("data"));
+                            if(operacao == 1)
                                 note.setAuthor(xx.getString("author"));
-                                //FeedActivity.mAdapter.;
-                                FeedFragment.mAdapter.updateList(note);
-                            }
+                            mAdapter.updateList(note);
+                        }
+                        if (operacao == 1) {
                             //Swipe load complete
                             FeedFragment.onItemsLoadComplete();
-                        }
-                    }else if(operacao == 2){
-                        MyNotesFragment.mAdapter.clearList();
-                        if (json.length() > 0) {
-                            //listNotte = new ArrayList<NoteModel>();
-                            MyNotesFragment.mAdapter.clearList();
-                            for (int i = 0; i < json.length(); i++) {
-                                JSONObject xx = json.getJSONObject(i);
-                                NoteModel note = new NoteModel();
-                                note.setNoteId(xx.getInt("id"));
-                                note.setTitle(xx.getString("title"));
-                                note.setBody(xx.getString("descricao"));
-                                note.setLikes(xx.getInt("likes"));
-                                note.setFavorites(xx.getInt("favorites"));
-                                note.setShares(xx.getInt("shares"));
-                                note.setVisualization(xx.getInt("acess"));
-                                //FeedActivity.mAdapter.;
-                                MyNotesFragment.mAdapter.updateList(note);
-                            }
                         }
                     }
                 }else{

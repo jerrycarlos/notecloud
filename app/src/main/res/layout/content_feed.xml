@@ -15,8 +15,8 @@
 
     <LinearLayout
         android:id="@+id/content_fragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@drawable/shape_background"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"

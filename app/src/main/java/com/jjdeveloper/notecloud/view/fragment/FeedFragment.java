@@ -56,7 +56,7 @@ public class FeedFragment extends Fragment {
         setupRecycler();
         ActionAdapter.operacao = 0;
         ActionAdapter.action(MainActivity.userLogado.getId(),activity);
-        NoteControl.buscaNotas(activity);
+        NoteControl.buscaNotas(activity, mAdapter);
         fab = FeedActivity.fab;
         fab2 = FeedActivity.fab2;
         fab.setVisibility(View.VISIBLE);
@@ -72,7 +72,7 @@ public class FeedFragment extends Fragment {
     private void setupRecycler() {
         // Criando o StaggeredGridLayoutManager com duas colunas, descritas no primeiro argumento
         // e no sentido vertical (como uma lista).
-        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
+        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         //LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         //mRecyclerView = new RecyclerView(getApplicationContext());
         mRecyclerView.setLayoutManager(layoutManager);
@@ -116,7 +116,7 @@ public class FeedFragment extends Fragment {
 
     private void refreshContent(){
         FeedActivity.fab2.setVisibility(View.INVISIBLE);
-        NoteControl.buscaNotas(activity);
+        NoteControl.buscaNotas(activity, mAdapter);
     }
 
     public static void onItemsLoadComplete() {

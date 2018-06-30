@@ -46,7 +46,7 @@ public class MyNotesFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_my_notes, container, false);
         initObjects();
         setupRecycler();
-        NoteControl.myNotes(activity);
+        NoteControl.myNotes(activity, mAdapter);
         fab = FeedActivity.fab;
         fab2 = FeedActivity.fab2;
         fab.setVisibility(View.VISIBLE);
