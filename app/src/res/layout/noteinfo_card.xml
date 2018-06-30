@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="5dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/shape_edittext_border_top">
+
+                <TextView
+                    android:id="@+id/txtTitleCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:maxLength="35"
+                    android:textSize="22sp"
+                    tools:text="Lorem Ipsum" />
+
+                <TextView
+                    android:id="@+id/noteAuthorCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="\@author"
+                    android:gravity="center"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <EditText
+                    android:id="@+id/txtDescricaoCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_descricao_card"
+                    android:contextClickable="false"
+                    android:cursorVisible="false"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="textMultiLine|textImeMultiLine"
+                    android:isScrollContainer="true"
+                    android:maxHeight="200dp"
+                    android:minHeight="50dp"
+                    android:overScrollMode="always"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut ornare metus. Vivamus eget tellus lectus. Morbi ac placerat urna. Morbi ut magna massa. Maecenas id consequat urna, quis suscipit eros. Vivamus facilisis lobortis laoreet."/>
+
+                <TextView
+                    android:id="@+id/noteDateCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_border"
+                    android:text="Data criação: "
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btFavoriteCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/btLikeCard"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_action_unfavorite"
+                    app:backgroundTintMode="src_over"
+                    app:borderWidth="0dp"
+                    app:elevation="0dp"
+                    app:fabSize="normal" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btLikeCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_action_like"
+                    app:backgroundTintMode="src_over"
+                    app:borderWidth="0dp"
+                    app:elevation="0dp"
+                    app:fabSize="normal" />
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btShareCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/btCopyCard"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_action_share"
+                    app:backgroundTintMode="src_over"
+                    app:borderWidth="0dp"
+                    app:elevation="0dp"
+                    app:fabSize="normal" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btCopyCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_action_copy"
+                    app:backgroundTintMode="src_over"
+                    app:borderWidth="0dp"
+                    app:elevation="0dp"
+                    app:fabSize="normal" />
+
+                <TextView
+                    android:id="@+id/lblLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btLikeCard"
+                    android:layout_alignRight="@+id/btLikeCard"
+                    android:layout_below="@+id/btLikeCard"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="1000" />
+
+                <TextView
+                    android:id="@+id/lblFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btFavoriteCard"
+                    android:layout_alignRight="@+id/btFavoriteCard"
+                    android:layout_below="@+id/btFavoriteCard"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="1000" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="5dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="5dp">
+
+            <TextView
+                android:id="@+id/txtTitleHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                tools:text="Note Title" />
+
+            <TextView
+                android:id="@+id/txtDescricaoHolder"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra risus eget egestas consectetur. Etiam pretium urna a eros sollicitudin pretium. Vivamus orci leo, venenatis in viverra id, malesuada et ligula."
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/noteIdHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="#noteNumber"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btLikeHolderMy"
+                    android:layout_alignRight="@+id/btLikeHolderMy"
+                    android:layout_below="@+id/btLikeHolderMy"
+                    android:gravity="center"
+                    android:text="1000" />
+
+                <ImageButton
+                    android:id="@+id/btLikeHolderMy"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:contentDescription="Like"
+                    android:src="@drawable/ic_action_dislike" />
+
+                <TextView
+                    android:id="@+id/lblFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btFavoriteHolderMy"
+                    android:layout_alignRight="@+id/btFavoriteHolderMy"
+                    android:layout_below="@+id/btFavoriteHolderMy"
+                    android:gravity="center"
+                    android:text="1000" />
+
+                <ImageButton
+                    android:id="@+id/btFavoriteHolderMy"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_toRightOf="@+id/btLikeHolderMy"
+                    android:contentDescription="Favorite"
+                    android:src="@drawable/ic_action_unfavorite" />
+
+                <TextView
+                    android:id="@+id/lblShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btFavoriteHolder"
+                    android:layout_alignRight="@+id/btFavoriteHolder"
+                    android:layout_below="@+id/btFavoriteHolder"
+                    android:gravity="center"
+                    android:text="1000" />
+
+                <ImageButton
+                    android:id="@+id/btFavoriteHolder"
+                    android:layout_width="43dp"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/btCopyHolder"
+                    android:contentDescription="Share"
+                    android:src="@drawable/ic_action_share" />
+
+                <ImageButton
+                    android:id="@+id/btCopyHolder"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="false"
+                    android:contentDescription="Copy"
+                    android:src="@drawable/ic_action_copy" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</android.support.constraint.ConstraintLayout>
