@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml",
+            "outputFile": "E:\\Natanael\\Projects\\NoteCloud\\NoteCloud-OFC\\notecloud\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-am\\values-am.xml",
             "map": [
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cadd5c70cca9d98e408d552d8fae8422/res/values-am/values-am.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\69ed60a1595ce7f85c5d3dc07ce9db98\\res\\values-am\\values-am.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,24 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.8.0.aar/b7ea8f8b5476ef99c24184b27c425712/res/values-am/values.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\03debc266a1e90f165a5a511c4841211\\res\\values-am\\values.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10",
-                        "startColumns": "0,0,0,0,0,0,0",
-                        "startOffsets": "235,301,405,467,533,609,703",
-                        "endColumns": "65,103,61,65,75,93,68",
-                        "endOffsets": "300,404,466,532,608,702,771"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "190",
+                        "endOffsets": "473"
                     },
                     "to": {
-                        "startLines": "37,38,39,40,41,42,43",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "4298,4368,4476,4542,4612,4692,4790",
-                        "endColumns": "69,107,65,69,79,97,72",
-                        "endOffsets": "4363,4471,4537,4607,4687,4785,4858"
+                        "startLines": "27",
+                        "startColumns": "4",
+                        "startOffsets": "2886",
+                        "endColumns": "190",
+                        "endOffsets": "3072"
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/09da5b9dab1832f9d9edc95b718bc218/res/values-am/values-am.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\ac8fefe3c52796cb33e9da4a86bd8a2c\\res\\values-am\\values-am.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/d14c82506962d41aa691b3b238bb3df8/res/values-am/values.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a3b72b1c5c88dcfebc957894802b78f1\\res\\values-am\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -72,20 +72,20 @@
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/9108c0619a5aa7f6e544eac3f8fd8959/res/values-am/values.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-11.8.0.aar\\3796cb8e436f37d49b7514f04970a44c\\res\\values-am\\values.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "283",
-                        "endColumns": "190",
-                        "endOffsets": "473"
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "235,301,405,467,533,609,703",
+                        "endColumns": "65,103,61,65,75,93,68",
+                        "endOffsets": "300,404,466,532,608,702,771"
                     },
                     "to": {
-                        "startLines": "27",
-                        "startColumns": "4",
-                        "startOffsets": "2886",
-                        "endColumns": "190",
-                        "endOffsets": "3072"
+                        "startLines": "37,38,39,40,41,42,43",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "4298,4368,4476,4542,4612,4692,4790",
+                        "endColumns": "69,107,65,69,79,97,72",
+                        "endOffsets": "4363,4471,4537,4607,4687,4785,4858"
                     }
                 }
             ]

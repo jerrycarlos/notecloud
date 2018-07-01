@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "E:\\Natanael\\Projects\\NoteCloud\\NoteCloud-OFC\\notecloud\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
             "map": [
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cadd5c70cca9d98e408d552d8fae8422/res/values-pt-rBR/values-pt-rBR.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "5354",
-                        "endColumns": "100",
-                        "endOffsets": "5450"
-                    }
-                },
-                {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/d14c82506962d41aa691b3b238bb3df8/res/values-pt-rBR/values.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a3b72b1c5c88dcfebc957894802b78f1\\res\\values-pt-rBR\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,24 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/09da5b9dab1832f9d9edc95b718bc218/res/values-pt-rBR/values-pt-rBR.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-11.8.0.aar\\3796cb8e436f37d49b7514f04970a44c\\res\\values-pt-rBR\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,1904",
-                        "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
-                        "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,1984"
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "239,309,432,497,562,642,751",
+                        "endColumns": "69,122,64,64,79,108,73",
+                        "endOffsets": "308,431,496,561,641,750,824"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,44",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,5269",
-                        "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
-                        "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,5349"
+                        "startLines": "37,38,39,40,41,42,43",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "4655,4729,4856,4925,4994,5078,5191",
+                        "endColumns": "73,126,68,68,83,112,77",
+                        "endOffsets": "4724,4851,4920,4989,5073,5186,5264"
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/9108c0619a5aa7f6e544eac3f8fd8959/res/values-pt-rBR/values.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\03debc266a1e90f165a5a511c4841211\\res\\values-pt-rBR\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -72,20 +55,37 @@
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.8.0.aar/b7ea8f8b5476ef99c24184b27c425712/res/values-pt-rBR/values.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\ac8fefe3c52796cb33e9da4a86bd8a2c\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10",
-                        "startColumns": "0,0,0,0,0,0,0",
-                        "startOffsets": "239,309,432,497,562,642,751",
-                        "endColumns": "69,122,64,64,79,108,73",
-                        "endOffsets": "308,431,496,561,641,750,824"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,1904",
+                        "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
+                        "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,1984"
                     },
                     "to": {
-                        "startLines": "37,38,39,40,41,42,43",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "4655,4729,4856,4925,4994,5078,5191",
-                        "endColumns": "73,126,68,68,83,112,77",
-                        "endOffsets": "4724,4851,4920,4989,5073,5186,5264"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,44",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,5269",
+                        "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
+                        "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,5349"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\69ed60a1595ce7f85c5d3dc07ce9db98\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "5354",
+                        "endColumns": "100",
+                        "endOffsets": "5450"
                     }
                 }
             ]

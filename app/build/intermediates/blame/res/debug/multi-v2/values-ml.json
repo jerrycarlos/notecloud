@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/jerry/AndroidStudioProjects/NoteCloud/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml",
+            "outputFile": "E:\\Natanael\\Projects\\NoteCloud\\NoteCloud-OFC\\notecloud\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ml\\values-ml.xml",
             "map": [
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/9108c0619a5aa7f6e544eac3f8fd8959/res/values-ml/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "283",
-                        "endColumns": "218",
-                        "endOffsets": "501"
-                    },
-                    "to": {
-                        "startLines": "27",
-                        "startColumns": "4",
-                        "startOffsets": "3138",
-                        "endColumns": "218",
-                        "endOffsets": "3352"
-                    }
-                },
-                {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cadd5c70cca9d98e408d552d8fae8422/res/values-ml/values-ml.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\69ed60a1595ce7f85c5d3dc07ce9db98\\res\\values-ml\\values-ml.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +21,41 @@
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/d14c82506962d41aa691b3b238bb3df8/res/values-ml/values.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-11.8.0.aar\\3796cb8e436f37d49b7514f04970a44c\\res\\values-ml\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "235,311,428,498,566,649,755",
+                        "endColumns": "75,116,69,67,82,105,76",
+                        "endOffsets": "310,427,497,565,648,754,831"
+                    },
+                    "to": {
+                        "startLines": "37,38,39,40,41,42,43",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "4772,4852,4973,5047,5119,5206,5316",
+                        "endColumns": "79,120,73,71,86,109,80",
+                        "endOffsets": "4847,4968,5042,5114,5201,5311,5392"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\03debc266a1e90f165a5a511c4841211\\res\\values-ml\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "218",
+                        "endOffsets": "501"
+                    },
+                    "to": {
+                        "startLines": "27",
+                        "startColumns": "4",
+                        "startOffsets": "3138",
+                        "endColumns": "218",
+                        "endOffsets": "3352"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a3b72b1c5c88dcfebc957894802b78f1\\res\\values-ml\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/09da5b9dab1832f9d9edc95b718bc218/res/values-ml/values-ml.xml",
+                    "source": "C:\\Users\\FamiliaXT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\ac8fefe3c52796cb33e9da4a86bd8a2c\\res\\values-ml\\values-ml.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,23 +86,6 @@
                         "startOffsets": "105,224,342,457,550,655,787,864,940,1022,1133,1239,1337,1451,1551,1662,1821,5397",
                         "endColumns": "118,117,114,92,104,131,76,75,81,110,105,97,113,99,110,158,100,81",
                         "endOffsets": "219,337,452,545,650,782,859,935,1017,1128,1234,1332,1446,1546,1657,1816,1917,5474"
-                    }
-                },
-                {
-                    "source": "/home/jerry/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.8.0.aar/b7ea8f8b5476ef99c24184b27c425712/res/values-ml/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10",
-                        "startColumns": "0,0,0,0,0,0,0",
-                        "startOffsets": "235,311,428,498,566,649,755",
-                        "endColumns": "75,116,69,67,82,105,76",
-                        "endOffsets": "310,427,497,565,648,754,831"
-                    },
-                    "to": {
-                        "startLines": "37,38,39,40,41,42,43",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "4772,4852,4973,5047,5119,5206,5316",
-                        "endColumns": "79,120,73,71,86,109,80",
-                        "endOffsets": "4847,4968,5042,5114,5201,5311,5392"
                     }
                 }
             ]
